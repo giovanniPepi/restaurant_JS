@@ -1,7 +1,6 @@
 import avatar from './img/GitHub-Mark-64px.png';
 
-const dQuery = () => {
- 
+const dQuery = () => { 
 
   // HTML base skeleton creator
   const container = document.querySelector('.container');
@@ -41,8 +40,7 @@ const dQuery = () => {
   para1.textContent = "LLorem ipsum, dolor sit amet consectetur adipisicing elit. Quae eius quis ad omnis maiores provident ullam officia dolorem molestiae ratione rem cumque fuga voluptatibus vel, est minima necessitatibus hic quam?";
 
   main.appendChild(para1);
-  container.appendChild(main);
-
+  container.appendChild(main);  
 
   //footer
   const footer = document.createElement('div');
