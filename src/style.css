@@ -29,7 +29,6 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  height: 10vh;
 }
 .tabs{
   display: flex;
@@ -42,10 +41,13 @@ body {
 }
 .main {
   display: flex;
-  padding: 1rem;
-  height: 80vh;
+  flex-direction: column;
+  margin: 0 5rem 0 5rem;
 }
 .footer {
   display: flex;
-  height: 10vh;
+  justify-content: center;
+}
+#logo {
+  height: 2rem;
 }

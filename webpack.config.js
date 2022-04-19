@@ -18,6 +18,10 @@ module.exports = {
         test: /\.(ttf)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.(png|jpg|svg|jpeg)$/i,
+        type: 'asset/resource',
+      }
     ],
   },
   plugins: [
