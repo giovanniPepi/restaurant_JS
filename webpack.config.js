@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'custom template...',
+      title: '🍴 Gerijeb\'s restaurant',
       template: './src/index.html',
     }),
   ],

@@ -1,3 +1,33 @@
+:root {
+  --fontSize: calc(1vh + .5vw + 6px);
+  --fontSizeTabs: calc(2*(var(--fontSize)));
+}
+body *{
+  border: .1px solid red;
+}
+html {
+  height: 100%;
+}
 body {
-  background: purple;
+  min-height: 100vh;
+}
+.container {
+  font-size: var(--fontSize);
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.tabs{
+  display: flex;
+  gap: 1rem;
+  font-size: var(--fontSizeTabs);
+}
+.main {
+  display: flex;
+}
+.footer {
+  display: flex;
 }
