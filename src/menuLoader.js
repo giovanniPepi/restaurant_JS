@@ -3,6 +3,8 @@
 const menuLoader = (option) => {
   const container = document.querySelector('.container');
   const main = document.querySelector(".main");
+  const footer = document.querySelector('.footer');
+  main.innerHTML = '';
   const para1 = document.createElement('p');
 
   switch (option) {
@@ -17,7 +19,7 @@ const menuLoader = (option) => {
     break;
   }
   main.appendChild(para1);
-  container.appendChild(main);  
+  container.insertBefore(main, footer);  
 }
 
 export default menuLoader;
