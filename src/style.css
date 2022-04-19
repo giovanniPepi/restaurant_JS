@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'Constatine';
+  src: url('./fonts/constantine/Constantine.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
 :root {
   --fontSize: calc(1vh + .5vw + 6px);
   --fontSizeTabs: calc(2*(var(--fontSize)));
+  
 }
 body *{
   border: .1px solid red;
@@ -17,6 +25,7 @@ body {
   flex-direction: column;
 }
 .header {
+  font-family: 'Constatine';
   display: flex;
   justify-content: center;
 }
