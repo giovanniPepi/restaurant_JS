@@ -1,3 +1,53 @@
+@font-face {
+  font-family: 'Constatine';
+  src: url('./fonts/constantine/Constantine.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+:root {
+  --fontSize: calc(1vh + .5vw + 6px);
+  --fontSizeTabs: calc(2*(var(--fontSize)));
+  font-family: 'Constatine';
+  --background1: #292524;
+  --background2: #EAB308;
+}
+body *{
+  border: .1px solid red;
+}
+html {
+  height: 100%;
+}
 body {
-  background: purple;
+  min-height: 100vh;
+  background: var(--background1);
+}
+.container {
+  font-size: var(--fontSize);
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.tabs{
+  display: flex;
+  gap: 1rem;
+  font-size: var(--fontSizeTabs);
+  align-items: center;
+}
+.home, .menu, .contact, .main {
+  background: var(--background2);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 5rem 1rem 5rem;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  height: 2rem;
 }

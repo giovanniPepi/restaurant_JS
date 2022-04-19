@@ -14,11 +14,19 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(ttf)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(png|jpg|svg|jpeg)$/i,
+        type: 'asset/resource',
+      }
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'custom template...',
+      title: '🍴 Gerijeb\'s restaurant',
       template: './src/index.html',
     }),
   ],
