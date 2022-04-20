@@ -53,7 +53,7 @@ const homeLoader = () => {
   para4.textContent = 'Location';
 
   const addr = document.createElement('p');
-  addr.textContent = ' Via Santa Maria, 119, Pisa, IT'
+  addr.textContent = 'Via Santa Maria, 119, Pisa, IT'
 
   para4.appendChild(addr);
 
