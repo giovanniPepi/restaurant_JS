@@ -13,10 +13,12 @@
   --background2: #EAB308;
   --myPadding: 1rem;
   --myBorder: 10%;
-}/* 
-body *{
+  --imgMenu: calc(10vw + 10vh);
+  text-align: center;
+} 
+/*  body *{
   border: .1px solid red;
-} */
+}  */
 html {
   height: 100%;
 }
@@ -62,15 +64,14 @@ body {
 .menuContainer {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   align-items: center;
   padding: var(--myPadding);
-  justify-content: center;
+  gap: .5rem;
 }
 .para1 {
   font-size: var(--fontSizeMiddle); 
 }
-.para1, .para2, .para3, .para4{
+.para1, .para2, .para3, .para4,{
   border: 2px solid var(--background1);
   border-radius: var(--myBorder);
   padding: var(--myPadding); 
@@ -82,8 +83,19 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+
+}
+.pizzaItemImg {
+  width: var(--imgMenu);
+  height: var(--imgMenu);
+  border-radius: var(--myBorder);
 }
 .pizzaItem {
-  width: 5rem;
-  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.para5 {
+  margin-bottom: 2rem;
 }
