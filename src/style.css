@@ -13,8 +13,8 @@
   --background2: #EAB308;
   --myPadding: 1rem;
   --myBorder: 10%;
-  --imgMenu: calc(10vw + 10vh);
-  --imgMap: calc(25vw + 25vh);
+  --imgMenu: calc(8vw + 6vh);
+  --imgMap: calc(22vw + 22vh);
   text-align: center;
 } 
 /*  body *{
@@ -84,7 +84,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 
 }
 .pizzaItemImg {
