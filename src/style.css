@@ -14,6 +14,7 @@
   --myPadding: 1rem;
   --myBorder: 10%;
   --imgMenu: calc(10vw + 10vh);
+  --imgMap: calc(25vw + 25vh);
   text-align: center;
 } 
 /*  body *{
@@ -98,4 +99,21 @@ body {
 }
 .para5 {
   margin-bottom: 2.5rem;
+}
+.mapImg {
+  width: var(--imgMap);
+  height: calc((var(--imgMap)) - 10rem);
+  border: 3px solid var(--background1);
+  border-radius: var(--myBorder);
+  margin-bottom: 2.5rem;
+}
+.flatIcon {
+  width: 2rem;
+  height: 2rem;
+}
+.para2Desc2, .para2Desc3 {
+  display:flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
