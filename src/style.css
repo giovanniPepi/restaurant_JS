@@ -13,10 +13,10 @@
   --background1: #292524;
   --background2: #EAB308;
   --myPadding: 1rem;
-}
+}/* 
 body *{
   border: .1px solid red;
-}
+} */
 html {
   height: 100%;
 }
@@ -42,6 +42,10 @@ body {
 .home, .menu, .contact, .main {
   background: var(--background2);
 }
+.home, .menu, .contact {
+  padding: var(--myPadding);
+  border-radius: 10%;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -55,18 +59,21 @@ body {
   height: 2rem;
 }
 .menuContainer {
-  padding: var(--myPadding);
-}
-.menuContainer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  padding: var(--myPadding);
   justify-content: center;
 }
 .para1 {
+  font-size: var(--fontSizeMiddle); 
+}
+.para1, .para2, .para3 {
   border: 2px solid var(--background1);
   border-radius: 10%;
-  padding: var(--myPadding);
-  font-size: var(--fontSizeMiddle);  
+  padding: var(--myPadding); 
+}
+.para2, .para3 {
+  width: 40vw;
 }
