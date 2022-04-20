@@ -1,4 +1,5 @@
 import avatar from './img/GitHub-Mark-64px.png';
+import getListeners from './getListeners';
 
 const dQuery = () => { 
 
@@ -35,7 +36,7 @@ const dQuery = () => {
   //Home
   const main = document.createElement('div');
   main.setAttribute('class', 'main'); 
-    
+   
   container.appendChild(main);  
 
   //footer
@@ -52,9 +53,9 @@ const dQuery = () => {
   footer.appendChild(link);  
   footer.appendChild(git);
 
-  container.appendChild(footer);
+  container.appendChild(footer);  
 
-  
+  getListeners();
 };
 
 export default dQuery;
