@@ -7,13 +7,19 @@
 :root {
   --fontSize: calc(1vh + .5vw + 6px);
   --fontSizeTabs: calc(2*(var(--fontSize)));
+  --fontSizeMiddle: calc(1.5*(var(--fontSize)));
   font-family: 'Constatine';
   --background1: #292524;
   --background2: #EAB308;
-}
-body *{
+  --myPadding: 1rem;
+  --myBorder: 10%;
+  --imgMenu: calc(10vw + 10vh);
+  --imgMap: calc(25vw + 25vh);
+  text-align: center;
+} 
+/*  body *{
   border: .1px solid red;
-}
+}  */
 html {
   height: 100%;
 }
@@ -39,10 +45,15 @@ body {
 .home, .menu, .contact, .main {
   background: var(--background2);
 }
+.home, .menu, .contact {
+  padding: var(--myPadding);
+  border-radius: var(--myBorder);
+}
 .main {
   display: flex;
   flex-direction: column;
   margin: 1rem 5rem 1rem 5rem;
+  border-radius: 5%;
 }
 .footer {
   display: flex;
@@ -50,4 +61,59 @@ body {
 }
 #logo {
   height: 2rem;
+}
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--myPadding);
+  gap: 1rem;
+}
+.para1 {
+  font-size: var(--fontSizeMiddle); 
+}
+.para1, .para2, .para3, .para4{
+  border: 2px solid var(--background1);
+  border-radius: var(--myBorder);
+  padding: var(--myPadding); 
+}
+.para2, .para3, .para4 {
+  width: 40vw;
+}
+.menuGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+
+}
+.pizzaItemImg {
+  width: var(--imgMenu);
+  height: var(--imgMenu);
+  border-radius: var(--myBorder);
+}
+.pizzaItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.para5 {
+  margin-bottom: 2.5rem;
+}
+.mapImg {
+  width: var(--imgMap);
+  height: calc((var(--imgMap)) - 10rem);
+  border: 3px solid var(--background1);
+  border-radius: var(--myBorder);
+  margin-bottom: 2.5rem;
+}
+.flatIcon {
+  width: 2rem;
+  height: 2rem;
+}
+.para2Desc2, .para2Desc3 {
+  display:flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
