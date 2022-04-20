@@ -48,12 +48,20 @@ const homeLoader = () => {
   para3.appendChild(sat);
   para3.appendChild(sun);
 
+  const para4 = document.createElement('p');
+  para4.setAttribute('class', 'para4');
+  para4.textContent = 'Location';
 
+  const addr = document.createElement('p');
+  addr.textContent = ' Via Santa Maria, 119, Pisa, IT'
+
+  para4.appendChild(addr);
 
   //appends
   menuContainer.appendChild(para1);
   menuContainer.appendChild(para2);
   menuContainer.appendChild(para3);
+  menuContainer.appendChild(para4);
   main.appendChild(menuContainer);
 
   container.insertBefore(main, footer);
