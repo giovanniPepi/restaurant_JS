@@ -35,11 +35,7 @@ const dQuery = () => {
   //Home
   const main = document.createElement('div');
   main.setAttribute('class', 'main'); 
-  
-  const para1 = document.createElement('p');
-  para1.textContent = "LLorem ipsum, dolor sit amet consectetur adipisicing elit. Quae eius quis ad omnis maiores provident ullam officia dolorem molestiae ratione rem cumque fuga voluptatibus vel, est minima necessitatibus hic quam?";
-
-  main.appendChild(para1);
+    
   container.appendChild(main);  
 
   //footer

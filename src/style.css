@@ -7,6 +7,7 @@
 :root {
   --fontSize: calc(1vh + .5vw + 6px);
   --fontSizeTabs: calc(2*(var(--fontSize)));
+  --fontSizeMiddle: calc(1.5*(var(--fontSize)));
   font-family: 'Constatine';
   --background1: #292524;
   --background2: #EAB308;
@@ -50,4 +51,7 @@ body {
 }
 #logo {
   height: 2rem;
+}
+.homeContainerHeader {
+  font-size: var(--fontSizeMiddle);
 }
