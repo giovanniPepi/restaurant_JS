@@ -60,9 +60,6 @@ body {
   padding: var(--myPadding);
   border-radius: var(--myBorder);
 }
-.home:hover, .menu:hover, .contact:hover {
-  transform: translateY(-8%);
-} 
 .main {
   display: flex;
   flex-direction: column;
@@ -121,6 +118,7 @@ body {
   flex-direction: column;
   text-align: center;
   background: var(--background2Darker);
+  padding: var(--myPadding);
 }
 .mapImg {
   width: var(--imgMap);
@@ -139,4 +137,22 @@ body {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+}
+/* animations */ 
+#logo:hover {
+  transform: scale(1.1);
+}
+.pizzaItem:hover{
+  background: var(--background2);
+  transform: scale(1.1);
+}
+
+.home:hover, .menu:hover, .contact:hover {
+  transform: translateY(-8%);
+} 
+.mapImg:hover {
+  transform: scale(1.5);
+}
+.para2Desc2:hover, .para2Desc3:hover {
+  transform: scale(1.1);
 }
