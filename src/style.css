@@ -1,8 +1,14 @@
 @font-face {
   font-family: 'Constatine';
   src: url('./fonts/constantine/Constantine.ttf') format('truetype');
-  font-weight: 600;
+  font-weight: normal;
   font-style: normal;
+}
+@font-face{
+  font-family: 'Constatine';
+  src: url('./fonts/constantine/Constantine_Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;  
 }
 :root {
   --fontSize: calc(1vh + .5vw + 6px);
@@ -17,15 +23,14 @@
   --imgMap: calc(22vw + 22vh);
   text-align: center;
 } 
-/*  body *{
-  border: .1px solid red;
-}  */
 html {
   height: 100%;
 }
 body {
   min-height: 100vh;
-  background: var(--background1);
+  background: url(./img/pexels-narda-yescas-1566837.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container {
   font-size: var(--fontSize);
@@ -71,6 +76,7 @@ body {
 }
 .para1 {
   font-size: var(--fontSizeMiddle); 
+  font-weight: bold;
 }
 .para1, .para2, .para3, .para4{
   border: 2px solid var(--background1);

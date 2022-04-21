@@ -4,7 +4,7 @@ import pizza2 from "./img/pexels-daria-shevtsova-1260968.jpg";
 import pizza3 from "./img/pexels-engin-akyurt-1552635.jpg";
 import pizza4 from "./img/pexels-engin-akyurt-2619970.jpg";
 import pizza5 from "./img/pexels-kristina-paukshtite-1146760.jpg";
-import pizza6 from "./img/pexels-narda-yescas-1566837.jpg";
+import pizza6 from "./img/pexels-pixabay-315755.jpg";
 
 const menuTabLoader = () => {
   clear();
