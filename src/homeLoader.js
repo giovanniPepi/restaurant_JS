@@ -12,19 +12,20 @@ const homeLoader = () => {
 
   const para1 = document.createElement('p');
   para1.setAttribute('class', 'para1');
-  para1.textContent = "Welcome to the restaurant!";
+  para1.textContent = "Oh Cheese Pizzeria!";
 
   const para2 = document.createElement('p');
   para2.setAttribute('class', 'para2');
   para2.textContent = 'Welcome to the best pizza in the world! We '+
-  'serve pizza made in a delicious wood oven, just like tradition demands. '+
-  'Our ingredients are fresh and strictly controlled for quality. Try out '+
+  'serve delicious pizza baked in a wood oven and '+
+  'our ingredients are fresh and strictly controlled for quality. Try out '+
   'one of our specials and be amazed!';
 
   const para3 = document.createElement('p');
   para3.setAttribute('class', 'para3');
-  para3.textContent = 'Hours';
 
+  const hours = document.createElement('p');
+  hours.setAttribute('class', 'hours');
   const mon = document.createElement('p');
   const tue = document.createElement('p');
   const wed = document.createElement('p');
@@ -32,6 +33,7 @@ const homeLoader = () => {
   const fri = document.createElement('p');
   const sat = document.createElement('p');
   const sun = document.createElement('p');
+  hours.textContent = 'Hours';
   mon.textContent = 'Monday: 6am - 6pm';
   tue.textContent = 'Tuesday: 6am - 6pm';
   wed.textContent = 'Wednesday: 6am - 6pm';
@@ -40,6 +42,7 @@ const homeLoader = () => {
   sat.textContent = 'Saturday: 8am - 10pm';
   sun.textContent = 'Sunday: 8am - 12am';
 
+  para3.appendChild(hours);
   para3.appendChild(mon);
   para3.appendChild(tue);
   para3.appendChild(wed);
@@ -53,6 +56,7 @@ const homeLoader = () => {
   para4.textContent = 'Location';
 
   const addr = document.createElement('p');
+  addr.setAttribute('class', 'addr');
   addr.textContent = 'Via Santa Maria, 119, Pisa, IT'
 
   para4.appendChild(addr);

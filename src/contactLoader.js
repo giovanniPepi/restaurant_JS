@@ -33,7 +33,7 @@ const contactLoader = () => {
   
   const para2Desc2Inst = document.createElement("p");
   para2Desc2Inst.setAttribute('class', 'inst');
-  para2Desc2Inst.textContent = "@pizzeriaaa";  
+  para2Desc2Inst.textContent = "@ohCheesePizzeriaa";  
 
   const para2Desc3 = document.createElement('p');
   para2Desc3.setAttribute('class', 'para2Desc3');

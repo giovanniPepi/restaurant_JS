@@ -1,36 +1,46 @@
 @font-face {
   font-family: 'Constatine';
   src: url('./fonts/constantine/Constantine.ttf') format('truetype');
-  font-weight: 600;
+  font-weight: normal;
   font-style: normal;
+}
+@font-face{
+  font-family: 'Constatine';
+  src: url('./fonts/constantine/Constantine_Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;  
 }
 :root {
   --fontSize: calc(1vh + .5vw + 6px);
-  --fontSizeTabs: calc(2*(var(--fontSize)));
+  --fontSizeTabs: calc(1.8*(var(--fontSize)));
   --fontSizeMiddle: calc(1.5*(var(--fontSize)));
   font-family: 'Constatine';
   --background1: #292524;
-  --background2: #EAB308;
+  --background2: #EAB308D9;
+  --background2Darker: #CA8A04;
   --myPadding: 1rem;
+  --myGiantPadding: 3rem;
   --myBorder: 10%;
-  --imgMenu: calc(10vw + 10vh);
-  --imgMap: calc(25vw + 25vh);
+  --imgMenu: calc(8vw + 6vh);
+  --imgMap: calc(22vw + 22vh);
   text-align: center;
 } 
-/*  body *{
-  border: .1px solid red;
-}  */
 html {
   height: 100%;
 }
 body {
   min-height: 100vh;
-  background: var(--background1);
-}
+  background: url(./img/pexels-narda-yescas-1566837.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  /*background-repeat: no-repeat;
+ */}
 .container {
   font-size: var(--fontSize);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 .header {
   display: flex;
@@ -41,6 +51,7 @@ body {
   gap: 1rem;
   font-size: var(--fontSizeTabs);
   align-items: center;
+  font-weight: bold;
 }
 .home, .menu, .contact, .main {
   background: var(--background2);
@@ -52,8 +63,9 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  margin: 1rem 5rem 1rem 5rem;
-  border-radius: 5%;
+  align-self: center;
+  width: 810px;
+  border-radius: 50px;
 }
 .footer {
   display: flex;
@@ -65,26 +77,35 @@ body {
 .menuContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: var(--myPadding);
+  padding: var(--myGiantPadding);
   gap: 1rem;
 }
 .para1 {
   font-size: var(--fontSizeMiddle); 
+  font-weight: bold;
 }
 .para1, .para2, .para3, .para4{
-  border: 2px solid var(--background1);
+  border: 3px solid var(--background1);
   border-radius: var(--myBorder);
   padding: var(--myPadding); 
+} 
+/* .para2, .para3, .para4 {
+
+} 
+ */.para4, .hours {
+  font-weight: bold;
+  font-size: var(--fontSizeMiddle);
 }
-.para2, .para3, .para4 {
-  width: 40vw;
+.addr{
+  font-size: var(--fontSize);
+  font-weight: normal;
 }
 .menuGrid {
   display: grid;
+  align-self: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 
 }
 .pizzaItemImg {
@@ -96,16 +117,16 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-.para5 {
-  margin-bottom: 2.5rem;
+  background: var(--background2Darker);
+  padding: var(--myPadding);
 }
 .mapImg {
   width: var(--imgMap);
-  height: calc((var(--imgMap)) - 10rem);
+  height: calc((var(--imgMap)) - 8rem);
   border: 3px solid var(--background1);
   border-radius: var(--myBorder);
   margin-bottom: 2.5rem;
+  align-self: center;
 }
 .flatIcon {
   width: 2rem;
@@ -116,4 +137,22 @@ body {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+}
+/* animations */ 
+#logo:hover {
+  transform: scale(1.1);
+}
+.pizzaItem:hover{
+  background: var(--background2);
+  transform: scale(1.1);
+}
+
+.home:hover, .menu:hover, .contact:hover {
+  transform: translateY(-8%);
+} 
+.mapImg:hover {
+  transform: scale(1.5);
+}
+.para2Desc2:hover, .para2Desc3:hover {
+  transform: scale(1.1);
 }

@@ -49,10 +49,10 @@ const dQuery = () => {
   const git = new Image();  
   git.src = avatar;
   git.setAttribute('id', 'logo');
-  
+ 
+  link.appendChild(git);
   footer.appendChild(link);  
-  footer.appendChild(git);
-
+ 
   container.appendChild(footer);  
 
   getListeners();
