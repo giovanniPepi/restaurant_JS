@@ -16,7 +16,8 @@
   --fontSizeMiddle: calc(1.5*(var(--fontSize)));
   font-family: 'Constatine';
   --background1: #292524;
-  --background2: #EAB308;
+  --background2: #EAB308D9;
+  --background2Darker: #CA8A04;
   --myPadding: 1rem;
   --myGiantPadding: 3rem;
   --myBorder: 10%;
@@ -59,6 +60,9 @@ body {
   padding: var(--myPadding);
   border-radius: var(--myBorder);
 }
+.home:hover, .menu:hover, .contact:hover {
+  transform: translateY(-8%);
+} 
 .main {
   display: flex;
   flex-direction: column;
@@ -116,6 +120,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background: var(--background2Darker);
 }
 .mapImg {
   width: var(--imgMap);
