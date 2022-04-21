@@ -2,13 +2,9 @@
   "name": "restaurant_js",
   "version": "1.0.0",
   "description": "Dynamic JS restaurant page",
-  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
-    "start": "webpack serve --open",
-    "server": "node server.js",
     "build": "webpack"
   },
   "repository": {
